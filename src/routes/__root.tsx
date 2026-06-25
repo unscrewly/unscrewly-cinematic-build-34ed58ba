@@ -94,6 +94,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@unscrewly" },
+      { name: "twitter:title", content: "Unscrewly — We UNSCREW the Boring" },
+      { name: "description", content: "Unscrewly is a cinematic web studio building automation-first websites, SaaS apps, and AI tools." },
+      { property: "og:description", content: "Unscrewly is a cinematic web studio building automation-first websites, SaaS apps, and AI tools." },
+      { name: "twitter:description", content: "Unscrewly is a cinematic web studio building automation-first websites, SaaS apps, and AI tools." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5b755fc4-360a-453b-a965-2a2d0a5636ca/id-preview-43c60fb9--043e35a1-9763-436e-9f2d-6f6d030e37c6.lovable.app-1782398734069.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5b755fc4-360a-453b-a965-2a2d0a5636ca/id-preview-43c60fb9--043e35a1-9763-436e-9f2d-6f6d030e37c6.lovable.app-1782398734069.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
