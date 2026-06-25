@@ -18,13 +18,10 @@ export function Hero() {
       id="top"
       className="relative isolate overflow-hidden pt-36 pb-24 sm:pt-44 sm:pb-32"
     >
-      {/* Animated mesh background */}
-      <motion.div style={{ y: yBg }} className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-1/3 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#7c3aed] opacity-30 blur-[120px] animate-mesh" />
-        <div className="absolute right-[10%] top-[20%] h-[400px] w-[400px] rounded-full bg-[#06b6d4] opacity-20 blur-[120px] animate-mesh" style={{ animationDelay: "-6s" }} />
-        <div className="absolute left-[10%] bottom-[10%] h-[400px] w-[400px] rounded-full bg-[#a855f7] opacity-15 blur-[120px] animate-mesh" style={{ animationDelay: "-12s" }} />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,transparent_0%,#0a0a0a_70%)]" />
-        <div className="grain" />
+      {/* Interactive liquid/glass cinematic backdrop */}
+      <motion.div style={{ y: yBg }} className="absolute inset-0 -z-10">
+        <HeroFX />
+        <div className="grain pointer-events-none" />
       </motion.div>
 
       {/* Floating UI mockup cards */}
