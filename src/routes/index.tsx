@@ -1,29 +1,52 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CustomCursor } from "@/components/CustomCursor";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { Marquee } from "@/components/Marquee";
+import { Services } from "@/components/Services";
+import { WhyUs } from "@/components/WhyUs";
+import { Portfolio } from "@/components/Portfolio";
+import { Pricing } from "@/components/Pricing";
+import { About } from "@/components/About";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Unscrewly — We UNSCREW the Boring" },
+      {
+        name: "description",
+        content:
+          "Automation-first web agency by Narain Suresh Chawla. Websites, SaaS apps, AI tools, PWAs — shipped fast, built right.",
+      },
+      { property: "og:title", content: "Unscrewly — We UNSCREW the Boring" },
+      {
+        property: "og:description",
+        content:
+          "Automation-first web agency. Websites, SaaS, AI tools and PWAs that actually work.",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative min-h-screen overflow-x-hidden bg-[#0a0a0a] text-foreground">
+      <CustomCursor />
+      <Navbar />
+      <main>
+        <Hero />
+        <Marquee />
+        <Services />
+        <WhyUs />
+        <Portfolio />
+        <Pricing />
+        <About />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
