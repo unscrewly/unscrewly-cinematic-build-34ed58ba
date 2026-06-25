@@ -14,14 +14,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <div className="flex items-center gap-2.5">
-              <div className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-[#7c3aed] to-[#06b6d4] text-sm font-black text-white">
-                U
-              </div>
-              <span className="font-display text-lg font-bold tracking-tight">
-                Unscrewly
-              </span>
-            </div>
+            <Logo size={32} />
             <p className="mt-3 max-w-xs text-sm text-neutral-500">
               We UNSCREW the Boring. Automation-first web agency for products
               that actually ship.
