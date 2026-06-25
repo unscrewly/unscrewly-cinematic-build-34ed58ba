@@ -54,7 +54,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-white/[0.07] pt-6 text-xs text-neutral-500 sm:flex-row sm:items-center">
-          <span>© 2025 Unscrewly. Built by Narain with ☕ and zero shortcuts.</span>
+          <span>© 2026 Unscrewly. Built by Narain with ☕ and zero shortcuts.</span>
           <span className="font-mono text-neutral-600">v1.0 · live</span>
         </div>
       </div>
