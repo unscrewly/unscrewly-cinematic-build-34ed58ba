@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Reveal } from "./Reveal";
+import logo from "../assets/unscrewly-logo.jpg.asset.json";
 
 const tags = ["React", "TanStack", "Firebase", "Supabase", "Framer", "AI/LLMs", "PWA"];
 
