@@ -1,4 +1,5 @@
 import { Mail, Instagram } from "lucide-react";
+import { Logo } from "./Logo";
 
 const navLinks = [
   { label: "Services", href: "#services" },
