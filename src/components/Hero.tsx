@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { HeroFX } from "./HeroFX";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
