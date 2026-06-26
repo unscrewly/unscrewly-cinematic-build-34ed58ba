@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Logo } from "./Logo";
 
 const links = [
   { label: "Services", href: "#services" },
@@ -38,14 +37,18 @@ export function Navbar() {
               scrolled ? "shadow-[0_8px_40px_-12px_rgba(0,0,0,0.6)]" : ""
             }`}
           >
-            <a href="#top" className="flex items-center">
-              <motion.span
+            <a href="#top" className="flex items-center gap-2.5">
+              <motion.div
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.6 }}
+                animate={{ opacity: 1, x: [0, -1, 1, 0] }}
+                transition={{ duration: 0.6, times: [0, 0.3, 0.6, 1] }}
+                className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-[#7c3aed] to-[#06b6d4] text-sm font-black text-white"
               >
-                <Logo size={32} />
-              </motion.span>
+                U
+              </motion.div>
+              <span className="font-display text-lg font-bold tracking-tight">
+                Unscrewly
+              </span>
             </a>
 
             <nav className="hidden items-center gap-1 md:flex">
