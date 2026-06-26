@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { HeroFX } from "./HeroFX";
+import { ScrollMorphImages } from "./ScrollMorphImages";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -8,7 +8,6 @@ export function Hero() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const yBg = useTransform(scrollYProgress, [0, 1], [0, 200]);
   const yFg = useTransform(scrollYProgress, [0, 1], [0, -60]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
@@ -18,11 +17,11 @@ export function Hero() {
       id="top"
       className="relative isolate overflow-hidden pt-36 pb-24 sm:pt-44 sm:pb-32"
     >
-      {/* Interactive liquid/glass cinematic backdrop */}
-      <motion.div style={{ y: yBg }} className="absolute inset-0 -z-10">
-        <HeroFX />
+      {/* Cinematic scroll-morph image backdrop (scatter → circle → arc) */}
+      <div className="absolute inset-0 -z-10">
+        <ScrollMorphImages scrollTargetRef={ref} />
         <div className="grain pointer-events-none" />
-      </motion.div>
+      </div>
 
       {/* Floating UI mockup cards */}
       <motion.div style={{ y: yFg, opacity }} className="pointer-events-none absolute inset-0 -z-10 hidden lg:block">
