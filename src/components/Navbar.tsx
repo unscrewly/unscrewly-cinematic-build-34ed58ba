@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import unscrewlyLogo from '../assets/unscrewly-logo.jpg'
+import { Logo } from "./Logo";
 
 const links = [
   { label: "Services", href: "#services" },
@@ -38,18 +38,14 @@ export function Navbar() {
               scrolled ? "shadow-[0_8px_40px_-12px_rgba(0,0,0,0.6)]" : ""
             }`}
           >
-            <a href="#top" className="flex items-center gap-2.5">
-              <motion.img
-                src={unscrewlyLogo}
-                alt="Unscrewly logo"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
+            <a href="#top" className="flex items-center">
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
-                className="h-9 w-9 rounded-lg object-cover ring-1 ring-white/10"
-              />
-              <span className="font-display text-lg font-bold tracking-tight">
-                Unscrewly
-              </span>
+              >
+                <Logo size={32} />
+              </motion.span>
             </a>
 
             <nav className="hidden items-center gap-1 md:flex">

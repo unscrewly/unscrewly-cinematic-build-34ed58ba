@@ -11,7 +11,6 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { FluidCursorTrail } from "../components/FluidCursorTrail";
 
 function NotFoundComponent() {
   return (
@@ -137,11 +136,8 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <FluidCursorTrail />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <div style={{ position: "relative", zIndex: 2 }}>
-        <Outlet />
-      </div>
+      <Outlet />
     </QueryClientProvider>
   );
 }

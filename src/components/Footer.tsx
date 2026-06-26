@@ -1,5 +1,5 @@
 import { Mail, Instagram } from "lucide-react";
-import logo from "@/assets/unscrewly-logo.jpg";
+import { Logo } from "./Logo";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -14,16 +14,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <div className="flex items-center gap-2.5">
-              <img
-                src={logo}
-                alt="Unscrewly logo"
-                className="h-9 w-9 rounded-lg object-cover ring-1 ring-white/10"
-              />
-              <span className="font-display text-lg font-bold tracking-tight">
-                Unscrewly
-              </span>
-            </div>
+            <Logo size={32} />
             <p className="mt-3 max-w-xs text-sm text-neutral-500">
               We UNSCREW the Boring. Automation-first web agency for products
               that actually ship.
