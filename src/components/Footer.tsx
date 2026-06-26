@@ -17,7 +17,7 @@ export function Footer() {
              <img
       src="https://i.ibb.co/8gD3yx7Q/your-image-name.png"
       alt="Unscrewly"
-      className="h-8 w-auto object-contain"
+      className="h-8 w-auto object-contain rounded-xl"
     />
             <p className="mt-3 max-w-xs text-sm text-neutral-500">
               We UNSCREW the Boring. Automation-first web agency for products
