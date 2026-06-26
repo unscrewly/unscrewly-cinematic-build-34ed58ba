@@ -47,7 +47,7 @@ export function Navbar() {
                  <img
       src="https://i.ibb.co/8gD3yx7Q/your-image-name.png"
       alt="Unscrewly"
-      className="h-8 w-auto object-contain"
+      className="h-8 w-auto object-contain rounded-xl"
     />
               </motion.span>
             </a>
