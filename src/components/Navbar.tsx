@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/unscrewly-logo.jpg";
+import unscrewlyLogo from '../assets/unscrewly-logo.jpg'
 
 const links = [
   { label: "Services", href: "#services" },
@@ -40,7 +40,7 @@ export function Navbar() {
           >
             <a href="#top" className="flex items-center gap-2.5">
               <motion.img
-                src="https://scontent.cdninstagram.com/v/t51.82787-19/653459135_18061320362459174_1911536415549304116_n.jpg?_nc_cat=100&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDI0LkMzIn0%3D&_nc_ohc=fJTsuDVFaVEQ7kNvwHtdjrg&_nc_oc=Adp0Hi9Y9cFFgk70OVQ4P2kcvhwTQWRRhiqP9E2mmsHw6eQBl9xONtuFc9Pyk88zAMw&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=my_qloT_phruPat33iEtrQ&_nc_ss=7b6a8&oh=00_Af_wSOBDEje9PuqHT0DYZFVNPTPLyCqzx5OmukuhV4B6Tw&oe=6A44289C"
+                src={unscrewlyLogo}
                 alt="Unscrewly logo"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
