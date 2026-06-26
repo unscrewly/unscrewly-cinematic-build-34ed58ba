@@ -14,7 +14,11 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <Logo size={32} />
+             <img
+      src="https://i.ibb.co/8gD3yx7Q/your-image-name.png"
+      alt="Unscrewly"
+      className="h-8 w-auto object-contain"
+    />
             <p className="mt-3 max-w-xs text-sm text-neutral-500">
               We UNSCREW the Boring. Automation-first web agency for products
               that actually ship.
