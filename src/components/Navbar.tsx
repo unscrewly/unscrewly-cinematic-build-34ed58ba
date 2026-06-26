@@ -44,7 +44,11 @@ export function Navbar() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
               >
-                <Logo size={32} />
+                 <img
+      src="https://i.ibb.co/8gD3yx7Q/your-image-name.png"
+      alt="Unscrewly"
+      className="h-8 w-auto object-contain"
+    />
               </motion.span>
             </a>
 
