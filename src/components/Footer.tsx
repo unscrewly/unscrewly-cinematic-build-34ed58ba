@@ -1,4 +1,5 @@
 import { Mail, Instagram } from "lucide-react";
+import logo from "@/assets/unscrewly-logo.jpg";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -14,9 +15,11 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-2.5">
-              <div className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-[#7c3aed] to-[#06b6d4] text-sm font-black text-white">
-                U
-              </div>
+              <img
+                src={logo}
+                alt="Unscrewly logo"
+                className="h-9 w-9 rounded-lg object-cover ring-1 ring-white/10"
+              />
               <span className="font-display text-lg font-bold tracking-tight">
                 Unscrewly
               </span>
@@ -60,7 +63,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-white/[0.07] pt-6 text-xs text-neutral-500 sm:flex-row sm:items-center">
-          <span>© 2025 Unscrewly. Built by Narain with ☕ and zero shortcuts.</span>
+          <span>© 2026 Unscrewly. Built by Narain with ☕ and zero shortcuts.</span>
           <span className="font-mono text-neutral-600">v1.0 · live</span>
         </div>
       </div>

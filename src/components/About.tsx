@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Reveal } from "./Reveal";
+import logo from "@/assets/unscrewly-logo.jpg";
 
 const tags = ["React", "TanStack", "Firebase", "Supabase", "Framer", "AI/LLMs", "PWA"];
 
@@ -28,21 +29,15 @@ export function About() {
               />
               <div className="relative grid h-full w-full place-items-center overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-[#0f0f0f] to-[#050505]">
                 <div className="grain" />
-                <motion.span
+                <motion.img
+                  src={logo}
+                  alt="Unscrewly logo"
                   initial={{ scale: 0.9, opacity: 0 }}
                   whileInView={{ scale: 1, opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-                  className="font-display text-[220px] font-black leading-none text-transparent"
-                  style={{
-                    WebkitTextStroke: "1.5px rgba(255,255,255,0.6)",
-                    background: "linear-gradient(180deg, rgba(124,58,237,0.4), rgba(6,182,212,0.2))",
-                    WebkitBackgroundClip: "text",
-                    backgroundClip: "text",
-                  }}
-                >
-                  N
-                </motion.span>
+                  className="h-[68%] w-[68%] rounded-2xl object-cover shadow-[0_30px_80px_-20px_rgba(124,58,237,0.55)] ring-1 ring-white/10"
+                />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-neutral-500">
                   <span>founder.001</span>
                   <span className="flex items-center gap-1.5">
